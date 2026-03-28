@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HirePulse - AI Hiring for Small Teams",
-  description: "Post jobs, screen candidates with AI, and hire faster. Built for small businesses. $29 per month.",
+  title: "HirePulse - AI-Powered Hiring for Small Teams",
+  description: "Post jobs, screen resumes with AI, and manage candidates. From $29/mo — 5x cheaper than Workable.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        {children}
+      </body>
     </html>
   );
 }
