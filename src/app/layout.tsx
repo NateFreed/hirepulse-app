@@ -16,6 +16,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "HirePulse - AI-Powered Hiring for Small Teams",
   description: "Post jobs, screen resumes with AI, and manage candidates. From $29/mo — 5x cheaper than Workable.",
+  openGraph: {
+    title: "HirePulse - AI Hiring for Small Teams",
+    description: "Post jobs, AI-screen resumes, manage candidates. From $29/mo.",
+    type: "website",
+    siteName: "HirePulse",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HirePulse - AI Hiring for Small Teams",
+    description: "Post jobs, AI-screen resumes, manage candidates. From $29/mo.",
+  },
+  keywords: ["hiring software", "ATS", "applicant tracking", "AI screening", "job posting", "small business hiring"],
 };
 
 export default function RootLayout({
